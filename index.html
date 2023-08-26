@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja responsiva</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+            <div class="container">
+                <h1 class="logo">Minha Loja Virtual</h1>
+                    <nav>
+                        <a href="#sobre" class="header-link">Sobre a Loja</a>
+                        <a href="#contato" class="header-link">Redes Sociais</a>
+                        <a href="#produtos" class="header-link">Produtos</a>
+                    </nav>
+                
+            </div>
+    </header>
+    <div class="container">
+        <section id="sobre" class="about-section">
+            <div class="about-image">
+                <img src="./imagens/capa da loja.webp" alt="Imagem da Loja">
+            </div>
+            <div class="about-text">
+                <h2>Sobre a Loja</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium soluta inventore quasi rem odio, eos quidem aliquid in dolore est labore placeat non beatae odit dignissimos officiis nesciunt cupiditate!</p>
+            </div>
+        </section>
+        <div class="container">
+            <section id="produtos" class="products-section">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./imagens/capadetroit.png" alt="Imagem do Produto 1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><strong>Detroit Become Human</strong></h3>
+                        <p class="product-description"><strong>Jogo de escolha futurista</strong></p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./imagens/Life_Is_Strange_2_capa.png" alt="Imagem do Produto 2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><strong>life is strange 2</strong></h3>
+                        <p class="product-description"><strong>Jogo de escolha</strong></p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./imagens/Red_Dead_Redemption_2.png" alt="Imagem do Produto 3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><strong>Red Dead Redemption</strong></h3>
+                        <p class="product-description"><strong>Jogo de faroeste</strong></p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./imagens/The_Last_of_Us_capa.png" alt="Imagem do Produto 4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name"><strong>The Last Of Us</strong></h3>
+                        <p class="product-description"><strong>Jogo pós-apocaliptico</strong></p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                    
+            </section>
+        </div>
+    </div>
+</section>
+<section id="contato">
+    <div class="container">
+        <ul>
+            <li class="center">
+                <h3>Redes sociais</h3>
+            </li>
+            <div class="social-icon">
+                <a href="https://www.youtube.com/">
+                    <img src="./imagens/youtube.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="./imagens/instagram.png" alt="">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="./imagens/twtier.png" alt="">
+                </a>
+            </div>
+        </ul>
+    </div>
+</section>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger-menu").click(function () {
+                $("nav").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

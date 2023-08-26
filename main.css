@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #271b1b;
+    color: #fff;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.about-section,
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    flex-basis: 50%;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex-basis: 50%;
+    padding-left: 20px;
+}
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex-basis: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 250px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product-description {
+    margin-top: 5px;
+}
+
+.add-to-cart {
+    display: block;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-name strong {
+    color: #ff0000;
+}
+
+.product-description strong {
+    font-style: italic;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .product {
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .header-link {
+        margin-right: 10px;
+    }
+
+    .product {
+        flex-basis: 100%;
+    }
+
+
+}
